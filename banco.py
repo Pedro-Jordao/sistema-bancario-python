@@ -50,10 +50,32 @@ while True:
 
 
     elif opcao == "s":
-        print("Saque")
+        try:
+            valor = float(input("Informe o valor a ser sacado: R$ "))
+        except ValueError:
+            print("Valor inválido. Por favor, informe um número.")
+            continue
+        if valor > saldo:
+            print("Saldo insuficiente para realizar o saque.")
+        elif valor > limite:
+            print(f"O valor do Saque não pôde ser realizado de acordo com o limite de R$ {limite:.2f}.")
+        elif numero_saques >= LIMITE_SAQUES:
+            print(f"Limite de saques diários atingido. Você já realizou {numero_saques} saques hoje.")
+        else:
+            saldo -= valor
+            extrato.append(f"- R$ {valor:.2f}")
+            numero_saques += 1
+            print(f"Saque de R$ {valor:.2f} realizado com sucesso!")
 
     elif opcao == "e":
-        print("Extrato")
+        if not extrato:
+            print("Não foi realizada nenhuma transação hoje.")
+        else:
+            print("Extrato: ")
+            for transacao in extrato:
+                print(transacao)
+            print(f"Saldo atual: R$ {saldo:.2f}")
+        
 
     elif opcao == "q":
         break
