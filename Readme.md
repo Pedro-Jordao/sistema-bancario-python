@@ -1,6 +1,6 @@
 # Banco Digital - Projeto de Estudos
 
-O repositório a seguir foi criado por mim como parte de um projeto de Bootcamp para fins de avaliação e aprovação. Embora a tarefa envolva etapas e configurações básicas, a implementação foi realizada de acordo com os requisitos descritos na Descrição do Desafio.
+O repositório a seguir foi criado por mim como parte de um projeto de Bootcamp da [Digital Innovation One - DIO](https://web.dio.me/home) para fins de avaliação e aprovação. Embora a tarefa envolva etapas e configurações básicas, a implementação foi realizada de acordo com os requisitos descritos na Descrição do Desafio.
 
 ## 🎯 Objetivos do Projeto
 
